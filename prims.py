@@ -4,8 +4,8 @@ def prims(graph):
     number_of_vertices = len(graph)
 
     connected_vertices = []
-    connected_vertices.append(0)
-    # connected_vertices.append(random.randint(0, len(graph) - 1)) #random starting point
+    #connected_vertices.append(0)
+    connected_vertices.append(random.randint(0, len(graph) - 1)) #random starting point
 
     while (len(connected_vertices) < number_of_vertices):
         lowest_weight = 9999

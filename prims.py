@@ -26,7 +26,8 @@ def prims(graph):
             
         
         connected_vertices.append(vertex_to_add)
-        print(f"connected vertex: {origin_point} to vertex:{vertex_to_add}, with the edge weight of {lowest_weight}")
+        print(f"connected vertex: {origin_point} to vertex: {vertex_to_add}, with the edge weight of {lowest_weight}")
+        # TODO make a way to represent the tree and return it using this info 
 
         # check for all the connected edges on that vertex_index and tthat they aren't already connected
         # get the minimum weight for that vertex_index
@@ -35,9 +36,10 @@ def prims(graph):
 
     
 input_graph = [
-    [0, 1, 0, 3], 
-    [1, 0, 2, 3], 
-    [0, 2, 0, 0], 
-    [3, 3, 0, 0]]
+[0, 2, 2, 5, 1], 
+[2, 0, 0, 3, 0], 
+[2, 0, 0, 0, 3], 
+[5, 3, 0, 0, 2], 
+[1, 0, 3, 2, 0]] 
 
 prims(input_graph)

@@ -11,6 +11,7 @@ def kruskal_mst(graph):
     for vertex_index in range(len(graph)):
         for edge_index in range(len(graph[vertex_index])):
             if graph[vertex_index][edge_index] != 0:
+                # TODO make sure things like 0,4 and 4,0 are being removed
                 # print(f"weight: {graph[vertex_index][edge_index]}, source: {vertex_index}, destination {edge_index}")
                 weighted_edges.append([graph[vertex_index][edge_index], vertex_index, edge_index])
     

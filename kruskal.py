@@ -27,7 +27,7 @@ def kruskal_mst(graph):
         # that didn't work
         # this is very janky but it works for now
         if weighted_edges[index][1] not in connected_vertices:
-            print(weighted_edges[index])
+            print(f"connected: {weighted_edges[index][1]} to {weighted_edges[index][2]} with weight {weighted_edges[index][0]}")
 
             connected_vertices.append(weighted_edges[index][1])
 
